@@ -1,0 +1,1 @@
+# Create a new SQL database called BookInfo that will store a list of authors and the books they wrote. It will have two tables. The first one should be called Authors and contain the following data: Image in folder
