@@ -54,12 +54,24 @@ letteers.pop(3)  # for remover of pop items from list using index value
 
 print(letteers)
 
-del letteers[0:2] # using del we can delete items from list or whole list
+del letteers[0:2]  # using del we can delete items from list or whole list
 
 print(letteers)
 
-letteers.clear() # to remove all the objects from list
+letteers.clear()  # to remove all the objects from list
 
 print(letteers)
 
-#
+# find index of letter in list
+
+letteers = ["a", "b", "c", "d", "e", "f"]
+
+print(letteers.index("d"))
+
+# sorting tuple inside lists using lambda function
+
+item = [("Prd1", 10), ("Prd2", 20), ("Prd3", 50), ]
+
+item.sort(key=lambda item: item[1], reverse=True)
+
+print(item)
