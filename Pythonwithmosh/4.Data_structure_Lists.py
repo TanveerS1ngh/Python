@@ -70,8 +70,74 @@ print(letteers.index("d"))
 
 # sorting tuple inside lists using lambda function
 
-item = [("Prd1", 10), ("Prd2", 20), ("Prd3", 50), ]
+item = [("Prd1", 10), ("Prd2", 20), ("Prd3", 50)]
 
 item.sort(key=lambda item: item[1], reverse=True)
 
 print(item)
+
+# map function
+
+items = [("Prd1", 10), ("Prd2", 20), ("Prd3", 50)]
+
+x = map(lambda item: item[0], items)
+
+for item in x:
+    print(item)
+
+xx = list(map(lambda item: item[1], items))
+
+print(xx)
+
+# filter function
+
+items = [("Prd1", 10), ("Prd2", 20), ("Prd3", 50)]
+
+x1 = list(filter(lambda item: item[1] >= 20, items))
+
+print(x1)
+
+# list comprehensions
+
+items = [("Prd1", 10), ("Prd2", 20), ("Prd3", 50)]
+
+#x1 = list(filter(lambda item: item[1] >= 20, items))
+
+x2 = [item[1] for item in items]
+
+x3 = [item for item in items if item[1] >= 20]
+
+print(x2, x3)
+
+# zip function
+
+list1 = [1, 2, 3, 4, 5, 6, 7, 8]
+list2 = [10, 20, 30, 40, 50, 60, 70, 80]
+
+x4 = list(zip(list1, list2))
+
+print(x4)
+
+print(list(zip("a,b,c,d,e,f,g,h", list1, list2)))
+
+# stack
+
+# it has behaviour LIFO last in first out
+
+
+browsing_session = []
+browsing_session.append(1)
+browsing_session.append(2)
+browsing_session.append(3)
+
+print(browsing_session)
+
+print(browsing_session.pop())
+print(browsing_session)
+print("redirect", browsing_session[-1])
+if not browsing_session:
+    print("disable")
+
+# queues
+
+# in here this has behaviour FIFO first in first out
